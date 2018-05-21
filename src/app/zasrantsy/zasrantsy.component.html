@@ -1,0 +1,20 @@
+<div>
+  <label>Имя засранца:
+    <input #zasranetsName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(zasranetsName.value); zasranetsName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="zasrantsy">
+  <li *ngFor="let zasranets of zasrantsy">
+   <a routerLink="/detail/{{zasranets.id}}">
+    <span class="badge">{{zasranets.id}}</span> {{zasranets.name}}
+   </a>
+   <button class="delete" title="delete zasranets"
+    (click)="delete(zasranets)">x
+   </button>
+  </li>
+</ul>

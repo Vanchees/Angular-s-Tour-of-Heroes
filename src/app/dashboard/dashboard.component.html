@@ -1,0 +1,10 @@
+<h3>Топ Засранцев</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let zasranets of zasrantsy" class="col-1-4" routerLink="/detail/{{zasranets.id}}">
+    <div class="module zasranets">
+      <h4>{{zasranets.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-zasranets-search></app-zasranets-search>

@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<style>
+  .poo {
+    color: #885F01;
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 250%;
+  }
+</style>
+<div style="text-align:center">
+  <h1 class="poo">
+  {{ title }}
+</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/zasrantsy">Список участников</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
